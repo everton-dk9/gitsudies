@@ -30,3 +30,27 @@ git push origin minha-branch
 
 - Clique no botão de pull request ou caso aparece uma mensagem "Compare and Pull Request" indicando que há a possibilidade de criar um PR, clique e você sera direcionado para a tela de criação de um pull request.
 
+- Usar o padrão de conventional commits para o titulo do PR.
+
+- Finalize o PR e aguarde a aprovação.
+
+6. Ao finalizar o PR e o merge for aprovado, agora você já pode deletar a branch que você criou para realizar
+a tarefa:
+
+- Primeiro delete a branch local:
+
+```
+git branch -D minha-branch
+```
+
+- Delete a branch remota:
+
+```
+git push origin --delete minha-branch
+```
+
+7. (OPCIONAL): Para eliminar completamente as referencias de tracking da branch remota deletada faça:
+
+```
+git fetch --prune
+```
